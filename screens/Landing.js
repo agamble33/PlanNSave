@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button, TextInput} from 'react-native';
+import {createStackNavigator} from 'react-navigation-stack';
 
 //import layout from '../css'
 
@@ -14,18 +15,25 @@ function LandingScreen(props){
           <Text style={layout.textChange2}>We work for you!</Text>
         </View>
       <View style={layout.containerFlex}>
-        <View style={layout.contanierButton}>
-          <Button title="Login" onPress={() => {
-                props.navigation.navigate({routeName: 'Login'});
-            }} />
+            <View style={layout.containerFlex3}>
+                <TextInput placeholder="User Name/Email" />
+            </View>
+            <View style={layout.containerFlex3}>
+                <TextInput placeholder="Password" />
+            </View>
+            <View>
+            <Button title="Login" onPress={() => {
+               console.log(props.navigation.navigate({routeName: 'Deals'}));
+               
+            }}   />
+            </View>
         </View>
         <View style={layout.contanierButton}>
           <Button title="New User" onPress={() => {
-                props.navigation.navigate({routeName: 'NewUser'});
-            }}  />
+               props.navigation.navigate({routeName: 'NewUser'});
+            }}   />
         </View>
       </View>
-    </View>
     );
 };
 
@@ -39,6 +47,14 @@ const layout = StyleSheet.create({
   containerMain: {
       flex: 1,
       backgroundColor: '#FFF700'
+    },
+    containerFlex3:{
+      backgroundColor: '#fff',
+      marginLeft:10,
+      marginRight:10,
+      marginBottom:10,
+      padding: 10,
+      borderRadius: 30
     },
     containerFLex2: {
       flex: 1,

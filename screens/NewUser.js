@@ -19,7 +19,7 @@ function NewUserScreen(props){
                 <TextInput placeholder="DOB(opional)" />
             </View>
             <View style={layout.containerSearch}>
-                <TextInput keyboardType='number-pad2' placeholder="Family Size" />
+                <TextInput keyboardType='number-pad' placeholder="Family Size" />
             </View>
             <View style={layout.containerSearch}>
                 <TextInput placeholder="Gender" />

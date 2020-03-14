@@ -2,11 +2,14 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 
 import UserInput from './navigator/navigation';
+import Tabs from './navigator/navigation';
 //import layout from '/css'
 
 export default function App() {
-  return <UserInput style={layout.container} />;
-};
+  return <UserInput style={layout.container}>
+              <Tabs/>
+            </UserInput>
+}
 
 const layout = StyleSheet.create({
   container: {
