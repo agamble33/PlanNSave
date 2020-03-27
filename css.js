@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 
-const layout = StyleSheet.create({
+export default const layout = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: 'black',
@@ -49,5 +49,3 @@ const layout = StyleSheet.create({
       }
 
   });
-
-  export default layout;

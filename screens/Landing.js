@@ -23,7 +23,7 @@ function LandingScreen(props){
             </View>
             <View>
             <Button title="Login" onPress={() => {
-               console.log(props.navigation.navigate({routeName: 'Deals'}));
+               props.navigation.navigate({routeName: 'Deals'});
                
             }}   />
             </View>
