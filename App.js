@@ -1,16 +1,14 @@
 import  React from 'react';
-import {Text, TouchableHighlight, View, Alert, Button, StyleSheet, useState} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from 'react-navigation-stack';
-import Modal from 'react-native-modal';
+import {} from 'react-native';
 
-import BottomTabs from './screens/TabsScreen'
+import AppNavigation from './navigator/AppNavigator';
 
 export default function App() {
-  return (
+   return (
     
-    <BottomTabs />
-   );
+     <AppNavigation />
+    );
+
  }
 
 

@@ -1,9 +1,8 @@
 import React from 'react';
-import {View,Text, StyleSheet, Button, TextInput} from 'react-native';
+import {View,Text, StyleSheet, TextInput} from 'react-native';
 
-//import layout from '../css'
 
-function NewUserScreen(props){
+function NewUserScreen(){
     return(
         <View style={layout.containerMain}>
             <View>
